@@ -1,11 +1,11 @@
 import NowPlaying from "../views/pages/now-playing";
-import Upcomming from "../views/pages/upcomming";
+import Upcoming from "../views/pages/upcoming";
 import Detail from "../views/pages/detail";
 
 const routes = {
-  "/": NowPlaying,
+  "/": NowPlaying, // default page
   "/now-playing": NowPlaying,
-  "/upcomming": Upcomming,
+  "/upcoming": Upcoming,
   "/detail/:id": Detail,
 };
 
