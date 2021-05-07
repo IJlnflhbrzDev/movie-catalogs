@@ -1,14 +1,18 @@
-const nowPlaying = {
-  // RENDER INI ADALAH SEBUAH METHOD BUATAN SENDIRI BUKAN BAWAAN OBJECT atau javascript
+import TheMovieDbSource from "../../data/themoviedb-source";
+
+const NowPlaying = {
   async render() {
     return `
-               <h2>Now Playing Page</h2>
-          `;
+      <h2>Now Playing Page</h2>
+    `;
   },
 
   async afterRender() {
-    // FUNGSI INI AKAN DI PANGIL SETELAH FUNCTION RENDER DI PANGIL
+    const movies = await TheMovieDbSource.nowPlayingMovies();
+    console.log(movies);
+
+    // TODO: tampilkan movies di dalam DOM
   },
 };
 
-export default nowPlaying;
+export default NowPlaying;
