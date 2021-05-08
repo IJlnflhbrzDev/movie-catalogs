@@ -4,7 +4,7 @@
   "description": "Free movie catalogue for you",
   "main": "index.js",
   "scripts": {
-      "start-dev": "webpack-dev-server --config webpack.dev.js",
+    "start-dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
   "keywords": [],
@@ -25,6 +25,7 @@
     "webpack-merge": "^5.0.9"
   },
   "dependencies": {
-    "regenerator-runtime": "^0.13.7"
+    "regenerator-runtime": "^0.13.7",
+    "serviceworker-webpack-plugin": "^1.0.1"
   }
 }
