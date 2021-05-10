@@ -7,6 +7,7 @@ const Detail = {
     return `
       <div id="movie" class="movie"></div>
       <div id="likeButtonContainer>
+
       </div>
     `;
   },
