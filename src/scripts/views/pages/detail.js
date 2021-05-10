@@ -6,7 +6,8 @@ const Detail = {
   async render() {
     return `
       <div id="movie" class="movie"></div>
-      <div id="likeButtonContainer></div>
+      <div id="likeButtonContainer>
+      </div>
     `;
   },
 
