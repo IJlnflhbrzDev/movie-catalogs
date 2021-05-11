@@ -1,8 +1,14 @@
 const NotificationHelper = {
   sendNotification({ title, options }) {
-    // TODO: check availability
-    // TODO: check permissions. if not granted, send request
-    // TODO: show notification
+    if (!this._checkAvailability()) {
+      console.log("Notification NOT Supported in this Brouser!");
+      return;
+    }
+    if (!this._checkPermission()) {
+      console.log("User Did Not Yet Granted Permission");
+      this._requestPermission();
+    }
+    this._showNotification({ title, options });
   },
 
   _checkAvailability() {
